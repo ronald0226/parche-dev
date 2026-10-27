@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -37,52 +37,83 @@
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">8:00 - 9:00</th>
+                    <th scope="row">
+                        <time datetime="08:00">8:00</time> -
+                        <time datetime="09:00">9:00</time>
+                    </th>
                     <td colspan="2">Registro y café de bienvenida</td>
                 </tr>
                 <tr>
-                    <th scope="row">9:00 - 9:30</th>
+                    <th scope="row">
+                        <time datetime="09:00">9:00</time> -
+                        <time datetime="09:30">9:30</time>
+                    </th>
                     <td colspan="2" id="bienvenida">
-                        Bienvenida: por qué existe Parche Dev — Valentina Ríos
+                        Bienvenida: por qué existe Parche Dev —
+                        Valentina Ríos
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">9:45 - 10:30</th>
+                    <th scope="row">
+                        <time datetime="09:45">9:45</time> -
+                        <time datetime="10:30">10:30</time>
+                    </th>
                     <td id="charla-html">
-                        HTML que se entiende sin CSS — Andrés Mejía
+                        HTML que se entiende sin CSS —
+                        <a href="ponentes.html#andres-mejia">Andrés Mejía</a>
                     </td>
                     <td id="charla-sql">
-                        SQL para curiosos — Luisa Ocampo
+                        SQL para curiosos —
+                        <a href="ponentes.html#luisa-ocampo">Luisa Ocampo</a>
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">10:45 - 11:30</th>
+                    <th scope="row">
+                        <time datetime="10:45">10:45</time> -
+                        <time datetime="11:30">11:30</time>
+                    </th>
                     <td id="charla-accesibilidad">
-                        La web es para todos: accesibilidad desde el día uno — Daniela Zapata
+                        La web es para todos: accesibilidad desde el día uno —
+                        <a href="ponentes.html#daniela-zapata">Daniela Zapata</a>
                     </td>
                     <td id="taller-python" rowspan="2">
-                        Taller: Tu primer bot con Python — Santiago Gil
+                        Taller: Tu primer bot con Python —
+                        <a href="ponentes.html#santiago-gil">Santiago Gil</a>
                         <p>Dura dos bloques. 30 cupos, trae tu computador.</p>
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">11:45 - 12:30</th>
+                    <th scope="row">
+                        <time datetime="11:45">11:45</time> -
+                        <time datetime="12:30">12:30</time>
+                    </th>
                     <td id="charla-deploy">
-                        From zero to deploy — Julián Castaño (charla en inglés)
+                        <span lang="en">From zero to deploy</span> —
+                        <a href="ponentes.html#julian-castano">Julián Castaño</a>
+                        (charla en inglés)
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">12:30 - 13:45</th>
+                    <th scope="row">
+                        <time datetime="12:30">12:30</time> -
+                        <time datetime="13:45">13:45</time>
+                    </th>
                     <td colspan="2">Almuerzo libre</td>
                 </tr>
                 <tr>
-                    <th scope="row">13:45 - 14:45</th>
+                    <th scope="row">
+                        <time datetime="13:45">13:45</time> -
+                        <time datetime="14:45">14:45</time>
+                    </th>
                     <td colspan="2" id="panel">
                         Panel: Mi primer empleo en tecnología moderna
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">14:45 - 15:00</th>
+                    <th scope="row">
+                        <time datetime="14:45">14:45</time> -
+                        <time datetime="15:00">15:00</time>
+                    </th>
                     <td colspan="2">Cierre y rifas</td>
                 </tr>
             </tbody>
@@ -101,3 +132,4 @@
     </footer>
 </body>
 </html>
+```

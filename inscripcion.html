@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -34,17 +34,20 @@
 
                 <p>
                     <label for="nombre">Nombre completo *</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="text" id="nombre" name="nombre"
+                           autocomplete="name" required>
                 </p>
 
                 <p>
                     <label for="correo">Correo electrónico *</label>
-                    <input type="email" id="correo" name="correo" required>
+                    <input type="email" id="correo" name="correo"
+                           autocomplete="email" required>
                 </p>
 
                 <p>
                     <label for="celular">Celular (10 dígitos, empieza por 3)</label>
                     <input type="tel" id="celular" name="celular"
+                           autocomplete="tel"
                            pattern="3[0-9]{9}"
                            title="Escribe 10 dígitos y comienza por 3">
                 </p>
@@ -145,33 +148,4 @@
                 <legend>Cuéntanos más</legend>
 
                 <p>
-                    <label for="aprendizaje">¿Qué esperas aprender en Parche Dev?</label>
-                    <textarea id="aprendizaje" name="aprendizaje"
-                              maxlength="300" rows="4"></textarea>
-                </p>
-            </fieldset>
-
-            <fieldset>
-                <legend>Confirmación</legend>
-
-                <p>
-                    <input type="checkbox" id="conducta" name="conducta"
-                           value="Aceptado" required>
-                    <label for="conducta">Acepto el <a href="conducta.html">código de conducta del evento</a> *</label>
-                </p>
-            </fieldset>
-
-            <button type="submit">Reservar mi cupo</button>
-        </form>
-    </main>
-
-    <footer>
-        <address>
-            ¿Preguntas? Escríbenos a
-            <a href="mailto:hola@parchedev.example">hola@parchedev.example</a>
-        </address>
-        <p>Parche Dev 2026 · Medellín, Colombia</p>
-        <p>Parche Dev es un evento ficticio creado como reto de formación.</p>
-    </footer>
-</body>
-</html>
+                    <label for="aprendizaje">¿Qué esperas aprender en Parche
