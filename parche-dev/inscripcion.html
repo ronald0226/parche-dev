@@ -1,21 +1,177 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="conoce como inscribirte al parche dev">
-    <title>Inscripciones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inscríbete gratis a Parche Dev 2026 y reserva tu cupo para el encuentro de desarrollo de software en Medellín.">
+    <title>Inscripción · Parche Dev 2026</title>
 </head>
 <body>
-    <a href="#contenido">saltar al contenido</a>
+    <a href="#contenido">Saltar al contenido</a>
+
     <header>
-        <h1><a href="index.html">Parche dev</a></h1>
-        <nav> <aria-label="Menu principal>
+        <h1><a href="index.html">Parche Dev 2026</a></h1>
+        <nav aria-label="Menú principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="agenda.html">Agenda</a></li>
                 <li><a href="ponentes.html">Ponentes</a></li>
-                <li><a href="inscripciones.html" aria-current="page">Inscripcion</a></li>
-                <li><a href="conducta.html">Codigo de conducta</a></li>
+                <li><a href="inscripcion.html" aria-current="page">Inscripción</a></li>
+                <li><a href="conducta.html">Código de conducta</a></li>
             </ul>
-         </nav>
-        </header>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <h2>Inscripción</h2>
+        <p>La entrada es gratuita y los cupos son limitados. Completa el formulario para reservar el tuyo.</p>
+        <p>Los campos marcados con * son obligatorios.</p>
+
+        <form action="gracias.html" method="get">
+            <fieldset>
+                <legend>Tus datos</legend>
+
+                <p>
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+
+                <p>
+                    <label for="correo">Correo electrónico *</label>
+                    <input type="email" id="correo" name="correo" required>
+                </p>
+
+                <p>
+                    <label for="celular">Celular (10 dígitos, empieza por 3)</label>
+                    <input type="tel" id="celular" name="celular"
+                           pattern="3[0-9]{9}"
+                           title="Escribe 10 dígitos y comienza por 3">
+                </p>
+
+                <p>
+                    <label for="ciudad">Ciudad</label>
+                    <select id="ciudad" name="ciudad">
+                        <option value="">Selecciona tu ciudad</option>
+                        <option value="Medellín">Medellín</option>
+                        <option value="Bello">Bello</option>
+                        <option value="Itagüí">Itagüí</option>
+                        <option value="Envigado">Envigado</option>
+                        <option value="Sabaneta">Sabaneta</option>
+                        <option value="La Estrella">La Estrella</option>
+                        <option value="Caldas">Caldas</option>
+                        <option value="Copacabana">Copacabana</option>
+                        <option value="Girardota">Girardota</option>
+                        <option value="Barbosa">Barbosa</option>
+                        <option value="Otra">Otra</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿En qué momento estás? *</legend>
+
+                <p>
+                    <input type="radio" id="empezando" name="perfil"
+                           value="Empezando" required>
+                    <label for="empezando">Estoy empezando a programar</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="aprendiendo" name="perfil"
+                           value="Ya programo">
+                    <label for="aprendiendo">Ya programo, pero no trabajo en tecnología</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="trabajando" name="perfil"
+                           value="Trabajo en tecnología">
+                    <label for="trabajando">Trabajo en tecnología</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Qué temas te interesan?</legend>
+
+                <p>
+                    <input type="checkbox" id="web" name="temas" value="Desarrollo web">
+                    <label for="web">Desarrollo web</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="datos" name="temas" value="Datos y SQL">
+                    <label for="datos">Datos y SQL</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="accesibilidad" name="temas" value="Accesibilidad">
+                    <label for="accesibilidad">Accesibilidad</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="python" name="temas" value="Python">
+                    <label for="python">Python</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="nube" name="temas" value="Despliegue en la nube">
+                    <label for="nube">Despliegue en la nube</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Agenda</legend>
+
+                <p>
+                    <input type="checkbox" id="taller" name="taller" value="Sí">
+                    <label for="taller">Quiero inscribirme al taller “Tu primer bot con Python” (30 cupos, trae tu computador)</label>
+                </p>
+
+                <p>
+                    <label for="talla">Talla de camiseta</label>
+                    <select id="talla" name="talla">
+                        <option value="">Selecciona tu talla</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cuéntanos más</legend>
+
+                <p>
+                    <label for="aprendizaje">¿Qué esperas aprender en Parche Dev?</label>
+                    <textarea id="aprendizaje" name="aprendizaje"
+                              maxlength="300" rows="4"></textarea>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Confirmación</legend>
+
+                <p>
+                    <input type="checkbox" id="conducta" name="conducta"
+                           value="Aceptado" required>
+                    <label for="conducta">Acepto el <a href="conducta.html">código de conducta del evento</a> *</label>
+                </p>
+            </fieldset>
+
+            <button type="submit">Reservar mi cupo</button>
+        </form>
+    </main>
+
+    <footer>
+        <address>
+            ¿Preguntas? Escríbenos a
+            <a href="mailto:hola@parchedev.example">hola@parchedev.example</a>
+        </address>
+        <p>Parche Dev 2026 · Medellín, Colombia</p>
+        <p>Parche Dev es un evento ficticio creado como reto de formación.</p>
+    </footer>
+</body>
+</html>
